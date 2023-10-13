@@ -23,18 +23,15 @@ Quadrant IV: x > 0 and y < 0
 ## Examples
 
 ``` pyhton
+Example 1:
+
 Input: 5 2
-
 Output: I.
+Explanation: The input coordinates (5, 2) are both positive, so they lie in Quadrant I.
 
-Explanation:
-The input coordinates (5, 2) are both positive, so they lie in Quadrant I.
 Example 2:
 
 Input: -3 -1
-
 Output: III.
-
-Explanation:
-The input coordinates (-3, -1) are both negative, so they lie in Quadrant III.
+Explanation: The input coordinates (-3, -1) are both negative, so they lie in Quadrant III.
 ```
