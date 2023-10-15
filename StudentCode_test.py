@@ -4,14 +4,15 @@ testIO = IOWrapper()
 expectedIO = IOWrapper()
 
 def test_hello():
-    expectedList = []
-    XtestList = []
-    YtestList = []
+    XtestList = [6,-3,-2,4,0,3,0]
+    YtestList = [-1,-4,5,3,-2,0,0]
+    #[(6, -1),(-3, -4),(-2, 5),(4, 3),(0, -2),(3, 0),(0, 0)]
+    expectedList = ["Quadrant IV","Quadrant III","Quadrant II","Quadrant I","Y-axis","X-axis","Origin"]
     i=0
     for expected in expectedList:
-        testX = XtestList[i]                                                                  # use these lOCs while using list object
+        testX = XtestList[i]
         testY = YtestList[i]
-        print("Testing: Test case",testX,YtestList,"Expected",expected)
+        print("Testing: Test case",testX,testY,"Expected",expected)
         #print("Testing: Test case","Expected",expected)
         expectedIO.print(expected)
         assert SCOPP_tester.test(testX, testY ,testIO = testIO,expectedIO = expectedIO)
